@@ -21,7 +21,7 @@ The preprocessing generates files under: ./dataset/yj/
 
 After preprocessing, run:
 ```bash
-python run_multi.py \
+python runPlanCAD.py \
   --task_name hm_classification \
   --is_training 1 \
   --model_id D_test \
