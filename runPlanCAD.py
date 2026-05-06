@@ -98,7 +98,7 @@ if __name__ == '__main__':
     parser.add_argument('--prompt_domain', type=int, default=0, help='')
     parser.add_argument('--llm_ckp_dir', type=str, default='meta-llama/Llama-3.2-1B', help='llm checkpoints dir')
     parser.add_argument('--backbone', type=str, default='meta-llama/Llama-3.2-1B')
-    parser.add_argument('--token', type=str, default='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')
+    parser.add_argument('--token', type=str, default='your_token')
     parser.add_argument('--mlp_hidden_dim', type=int, default=512, help='mlp hidden dim')
     parser.add_argument('--pooling_hidden_dim', type=int, default=32, help='mlp hidden dim')
     parser.add_argument('--mlp_hidden_layers', type=int, default=2, help='mlp hidden layers')
