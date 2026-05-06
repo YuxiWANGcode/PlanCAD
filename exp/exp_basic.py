@@ -1,5 +1,5 @@
 from models import (
-     Transformer, learnACrhythm_id
+     Transformer, PlanCAD
 )
    
 
@@ -9,7 +9,7 @@ class Exp_Basic(object):
         self.args = args
         self.model_dict = {
             'Transformer': Transformer,
-            'learnACrhythm_id':learnACrhythm_id,
+            'PlanCAD':PlanCAD,
         }
         self.model = self._build_model()
 
