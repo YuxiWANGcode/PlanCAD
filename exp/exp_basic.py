@@ -1,14 +1,9 @@
-from models import (
-     Transformer, PlanCAD
-)
-   
-
+from models import PlanCAD
 
 class Exp_Basic(object):
     def __init__(self, args):
         self.args = args
         self.model_dict = {
-            'Transformer': Transformer,
             'PlanCAD':PlanCAD,
         }
         self.model = self._build_model()
