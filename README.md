@@ -29,8 +29,8 @@ python3 runPlanCAD.py \
 --city D \
 --root_path ./dataset/yj/ \
 --seq_len 336 \
---label_len 288 -\
--pred_len 48 \
+--label_len 288 \
+--pred_len 48 \
 --token_len 48 \
 --test_seq_len 336 \
 --test_label_len 288 \
