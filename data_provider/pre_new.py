@@ -427,7 +427,7 @@ def load_yj_df(city='D'):
     # total_users = dataset['uid'].nunique() - (100000 - 100)
     
     if city in ['A', 'B', 'C', 'D']:
-        total_users = dataset['uid'].nunique() - 23991 # Remove last 3000 users 5800-200, 17000-200 = 16800 default 3000 # TODO: change here
+        total_users = dataset['uid'].nunique() - 3000 # Remove last 3000 users default 3000 # TODO: change here
         print(f"Total users: {total_users}")
         dataset = dataset[dataset['uid'] < total_users]
     else:
