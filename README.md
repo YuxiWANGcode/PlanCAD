@@ -67,7 +67,7 @@ The key file organization is as follows:
 ├── checkpoints/
 ├── data_provider/
 ├── dataset/
-│   └── yj/
+│   └── yj/tmp
 ├── exp/
 ├── data_pre.py
 └── run_PlanCAD.py
