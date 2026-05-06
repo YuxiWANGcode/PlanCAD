@@ -21,28 +21,28 @@ The preprocessing generates files under: ./dataset/yj/
 
 After preprocessing, run:
 ```bash
-python runPlanCAD.py \
-  --task_name hm_classification \
-  --is_training 1 \
-  --model_id D_test \
-  --model PlanCAD \
-  --data yj \
-  --city D \
-  --root_path ./dataset/yj/ \
-  --seq_len 336 \
-  --label_len 288 \
-  --pred_len 48 \
-  --token_len 48 \
-  --test_seq_len 336 \
-  --test_label_len 288 \
-  --test_pred_len 48 \
-  --batch_size 16 \
-  --learning_rate 1e-4 \
-  --train_epochs 50 \
-  --dropout 0.2 \
-  --gpu 0 \
-  --checkpoints ./checkpoints/PlanCAD/ \
-  --rollout_days 7
+python3 runPlanCAD.py \
+--task_name hm_classification --is_training 1 \
+--model_id PlanCADTest \
+--model PlanCAD \
+--data yj \
+--city D \
+--root_path ./dataset/yj/ \
+--seq_len 336 \
+--label_len 288 -\
+-pred_len 48 \
+--token_len 48 \
+--test_seq_len 336 \
+--test_label_len 288 \
+--test_pred_len 48 \
+--batch_size 16 \
+--learning_rate 1e-4 \
+--train_epochs 15 \
+--dropout 0.2 \
+--gpu 0 \
+--train_rollout_days 3 \
+--critic_feature_mode hybrid \
+--rollout_days 3
 ```
 Please modify the following fields if needed:
 
